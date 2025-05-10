@@ -1,5 +1,7 @@
 
 import { useState } from 'react';
+import { Button } from './ui/button';
+import { FileText } from 'lucide-react';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -188,6 +190,25 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-medium">Location</h4>
                     <p className="text-portfolio-text-muted">Delhi, India</p>
+                  </div>
+                </div>
+                
+                {/* Resume Download Button */}
+                <div className="flex items-start space-x-4 pt-4 border-t border-portfolio-background/20">
+                  <div className="text-portfolio-accent text-xl">📄</div>
+                  <div>
+                    <h4 className="font-medium">Resume</h4>
+                    <div className="mt-2">
+                      <a 
+                        href="/resume.pdf" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="flex items-center gap-2 button-outline text-sm px-4 py-2"
+                      >
+                        <FileText size={16} />
+                        <span>Download Resume</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
