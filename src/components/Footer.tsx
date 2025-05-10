@@ -1,4 +1,6 @@
 
+import { ExternalLink } from 'lucide-react';
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
@@ -22,6 +24,14 @@ const Footer = () => {
                 className="w-10 h-10 rounded-full bg-portfolio-container flex items-center justify-center text-portfolio-text-muted hover:text-portfolio-accent transition-colors"
               >
                 <span>in</span>
+              </a>
+              <a 
+                href="https://leetcode.com/u/Purnimakishore08/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 rounded-full bg-portfolio-container flex items-center justify-center text-portfolio-text-muted hover:text-portfolio-accent transition-colors"
+              >
+                <span>🧩</span>
               </a>
               <a 
                 href="mailto:purnimakishore003@gmail.com" 

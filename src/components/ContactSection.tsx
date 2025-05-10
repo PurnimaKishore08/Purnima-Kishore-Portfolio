@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Button } from './ui/button';
-import { FileText } from 'lucide-react';
+import { FileText, ExternalLink } from 'lucide-react';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -181,6 +181,22 @@ const ContactSection = () => {
                       className="text-portfolio-text-muted hover:text-portfolio-accent transition-colors"
                     >
                       linkedin.com/in/purnima-kishore-02a405215
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="text-portfolio-accent text-xl">🧩</div>
+                  <div>
+                    <h4 className="font-medium">LeetCode</h4>
+                    <a 
+                      href="https://leetcode.com/u/Purnimakishore08/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-portfolio-text-muted hover:text-portfolio-accent transition-colors flex items-center gap-1"
+                    >
+                      leetcode.com/u/Purnimakishore08/
+                      <ExternalLink size={14} />
                     </a>
                   </div>
                 </div>
