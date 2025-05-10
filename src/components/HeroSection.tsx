@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 
 const HeroSection = () => {
@@ -103,13 +102,30 @@ const HeroSection = () => {
           <div className="w-full md:w-1/2 flex justify-center animate-fade-in animate-delay-300">
             <div className="relative">
               <div className="bg-portfolio-container rounded-full w-72 h-72 md:w-80 md:h-80 overflow-hidden border-4 border-portfolio-accent shadow-xl">
-                {/* Profile picture placeholder */}
-                <div className="w-full h-full flex items-center justify-center bg-portfolio-container text-portfolio-accent">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-32 h-32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
-                </div>
+                {/* Profile picture */}
+                <img 
+                  src="https://ibb.co/hR55y5R" 
+                  alt="Purnima Kishore" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    // Fallback if image fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.onerror = null;
+                    target.style.display = 'none';
+                    const parent = target.parentElement;
+                    if (parent) {
+                      const fallback = document.createElement('div');
+                      fallback.className = 'w-full h-full flex items-center justify-center bg-portfolio-container text-portfolio-accent';
+                      fallback.innerHTML = `
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                          <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                      `;
+                      parent.appendChild(fallback);
+                    }
+                  }}
+                />
               </div>
               
               {/* Tech icons floating around */}
