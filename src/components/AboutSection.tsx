@@ -78,7 +78,7 @@ I’m passionate about contributing to meaningful tech that bridges the gap betw
                 <div className="card">
                   <h4 className="text-xl font-semibold text-portfolio-accent">Secondary School</h4>
                   <p className="text-portfolio-text-muted">2019</p>
-                  <p className="mt-2">Govt. Sarvo. Co-ed Vidalaya, Rohini, Delhi (CBSE)</p>
+                  <p className="mt-2">Govt. Sarvo. Co-ed Vidyalaya, Rohini Sector-8, Delhi (CBSE)</p>
                 </div>
               </div>
             </div>
