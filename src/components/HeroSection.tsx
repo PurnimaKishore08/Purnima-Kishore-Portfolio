@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 
 const HeroSection = () => {
@@ -104,7 +105,7 @@ const HeroSection = () => {
               <div className="bg-portfolio-container rounded-full w-72 h-72 md:w-80 md:h-80 overflow-hidden border-4 border-portfolio-accent shadow-xl">
                 {/* Profile picture */}
                 <img 
-                  src="https://ibb.co/hR55y5R" 
+                  src="https://i.postimg.cc/0QBTbJPR/Whats-App-Image-2025-05-11-at-1-04-52-AM.jpg" 
                   alt="Purnima Kishore" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
