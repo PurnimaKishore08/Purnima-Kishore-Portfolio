@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from './ui/button';
 import { FileText, ExternalLink } from 'lucide-react';
@@ -11,7 +10,7 @@ const ContactSection = () => {
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<{
+  const [submitStatus, setSubmitStatus<{
     type: 'success' | 'error' | null;
     message: string;
   }>({
@@ -216,7 +215,7 @@ const ContactSection = () => {
                     <h4 className="font-medium">Resume</h4>
                     <div className="mt-2">
                       <a 
-                        href="/resume.pdf" 
+                        href="https://drive.google.com/file/d/1L1YKhwV1uFGak2HlTexc6gDvMCjdcXQl/view?usp=sharing" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="flex items-center gap-2 button-outline text-sm px-4 py-2"
