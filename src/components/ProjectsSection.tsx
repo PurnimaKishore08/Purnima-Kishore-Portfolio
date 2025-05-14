@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 interface Project {
   title: string;
@@ -116,7 +117,11 @@ const ProjectsSection = () => {
                   </span>
                 </div>
                 
-                <p className="text-lg mb-6">{activeProject.description}</p>
+                <p className="text-lg mb-6">
+                  {activeProject.title === "Obesity Risk Prediction" ? 
+                    "The obesity prediction project focuses on utilizing machine learning techniques to classify and predict obesity levels based on individual lifestyle data. The dataset includes 17 features such as age, gender, dietary habits, physical activity, smoking, alcohol consumption, and body measurements. Data preprocessing involved label encoding, BMI calculation, and standardization. Among various models, the Random Forest classifier achieved the highest accuracy of 91%, effectively handling complex, non-linear relationships. In regression analysis, Random Forest again outperformed with a low RMSE of 7.18 and high R² score of 0.93. K-Means clustering revealed five distinct lifestyle patterns. The results demonstrate the effectiveness of ensemble methods in accurately estimating obesity levels from behavioral and physiological indicators, with potential applications in health risk assessment and personalized recommendations." 
+                    : activeProject.description}
+                </p>
                 
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold mb-2">Technologies Used</h4>
