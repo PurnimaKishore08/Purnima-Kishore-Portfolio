@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 interface Project {
   title: string;
@@ -78,6 +77,7 @@ const ProjectsSection = () => {
     image: "⚡",
     technologies: ["Circuit Design", "Electronics"]
   }];
+  
   return <section id="projects" className="section bg-gradient-portfolio">
       <div className="container mx-auto">
         <h2 className="section-title">Projects</h2>
@@ -120,6 +120,8 @@ const ProjectsSection = () => {
                 <p className="text-lg mb-6">
                   {activeProject.title === "Obesity Risk Prediction" ? 
                     "The obesity prediction project focuses on utilizing machine learning techniques to classify and predict obesity levels based on individual lifestyle data. The dataset includes 17 features such as age, gender, dietary habits, physical activity, smoking, alcohol consumption, and body measurements. Data preprocessing involved label encoding, BMI calculation, and standardization. Among various models, the Random Forest classifier achieved the highest accuracy of 91%, effectively handling complex, non-linear relationships. In regression analysis, Random Forest again outperformed with a low RMSE of 7.18 and high R² score of 0.93. K-Means clustering revealed five distinct lifestyle patterns. The results demonstrate the effectiveness of ensemble methods in accurately estimating obesity levels from behavioral and physiological indicators, with potential applications in health risk assessment and personalized recommendations." 
+                    : activeProject.title === "E-commerce Customer Segmentation" ?
+                    "During my summer training at Kurious Learning Labs Pvt Ltd, I worked on this e-commerce customer segmentation project using machine learning techniques. The objective was to segment customers into distinct groups based on their purchasing behavior and engagement patterns to support personalized marketing and customer retention strategies. I used Python and libraries like Pandas, Scikit-learn, and Seaborn to perform data preprocessing, exploratory data analysis, and implemented the KMeans clustering algorithm. Dimensionality reduction techniques such as PCA and t-SNE were applied for better visualization of clusters. The project enabled actionable insights for targeted campaigns, focusing on high-value customers and improving business decision-making. This hands-on experience deepened my skills in data analysis, model building, and visualization, while reinforcing the importance of data-driven strategies in real-world applications."
                     : activeProject.description}
                 </p>
                 
