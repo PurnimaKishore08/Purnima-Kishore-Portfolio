@@ -158,15 +158,10 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="text-portfolio-accent text-xl">📱</div>
+                  <div className="text-portfolio-accent text-xl">📍</div>
                   <div>
-                    <h4 className="font-medium">Phone</h4>
-                    <a 
-                      href="tel:+919625153161" 
-                      className="text-portfolio-text-muted hover:text-portfolio-accent transition-colors"
-                    >
-                      +91 96251 53161
-                    </a>
+                    <h4 className="font-medium">Location</h4>
+                    <p className="text-portfolio-text-muted">Delhi, India</p>
                   </div>
                 </div>
                 
@@ -198,14 +193,6 @@ const ContactSection = () => {
                       leetcode.com/u/Purnimakishore08/
                       <ExternalLink size={14} />
                     </a>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="text-portfolio-accent text-xl">📍</div>
-                  <div>
-                    <h4 className="font-medium">Location</h4>
-                    <p className="text-portfolio-text-muted">Delhi, India</p>
                   </div>
                 </div>
                 

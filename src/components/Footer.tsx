@@ -39,12 +39,6 @@ const Footer = () => {
               >
                 <span>✉️</span>
               </a>
-              <a 
-                href="tel:+919625153161" 
-                className="w-10 h-10 rounded-full bg-portfolio-container flex items-center justify-center text-portfolio-text-muted hover:text-portfolio-accent transition-colors"
-              >
-                <span>📱</span>
-              </a>
             </div>
             <p className="text-portfolio-text-muted text-sm">
               © {currentYear} Purnima Kishore. All rights reserved.
