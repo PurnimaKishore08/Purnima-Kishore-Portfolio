@@ -44,7 +44,6 @@ const Navbar = () => {
           <a href="#services" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Services</a>
           <a href="#projects" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Projects</a>
           <a href="#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Certificates</a>
-          <a href="#resume" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Resume</a>
           <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Blogs</a>
           <a href="#contact" className="button-primary">Contact Me</a>
         </div>
@@ -122,13 +121,6 @@ const Navbar = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Certificates
-              </a>
-              <a 
-                href="#resume" 
-                className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Resume
               </a>
               <a 
                 href="#blogs" 

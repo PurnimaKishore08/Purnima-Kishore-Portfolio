@@ -34,24 +34,6 @@ const CertificateSection = () => {
       verificationUrl: "https://drive.google.com/file/d/1CrgL9VJ3E8YoOwbNuGAnGALXzPd4Z-Wd/view?usp=sharing",
       category: "creative",
       icon: <FileText className="h-5 w-5 text-portfolio-accent" />
-    },
-    {
-      id: "aws-code-whisperer",
-      title: "AWS Code Whisperer Workshop",
-      issuer: "AWS",
-      date: "January 2024",
-      verificationUrl: "https://drive.google.com/file/d/19cEkkir3ztSdymEthC_hh1jyBL_T3OGI/view?usp=sharing",
-      category: "cloud",
-      icon: <Badge className="h-5 w-5 text-portfolio-accent" />
-    },
-    {
-      id: "generative-ai",
-      title: "Generative AI Masterclass",
-      issuer: "OpenWeaver",
-      date: "October 2023",
-      verificationUrl: "https://drive.google.com/file/d/1CrgL9VJ3E8YoOwbNuGAnGALXzPd4Z-Wd/view?usp=sharing",
-      category: "ai",
-      icon: <GraduationCap className="h-5 w-5 text-portfolio-accent" />
     }
   ];
 
@@ -82,10 +64,9 @@ const CertificateSection = () => {
         </motion.p>
 
         <Tabs defaultValue="all" className="w-full max-w-4xl mx-auto">
-          <TabsList className="grid grid-cols-5 mb-8">
+          <TabsList className="grid grid-cols-3 mb-8">
             <TabsTrigger value="all">All</TabsTrigger>
             <TabsTrigger value="ai">AI/ML</TabsTrigger>
-            <TabsTrigger value="cloud">Cloud</TabsTrigger>
             <TabsTrigger value="hackathon">Hackathons</TabsTrigger>
             <TabsTrigger value="creative">Creative</TabsTrigger>
           </TabsList>
@@ -102,7 +83,7 @@ const CertificateSection = () => {
             </div>
           </TabsContent>
           
-          {["ai", "cloud", "hackathon", "creative"].map((category) => (
+          {["ai", "hackathon", "creative"].map((category) => (
             <TabsContent key={category} value={category} className="mt-0">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {certificates
