@@ -8,13 +8,31 @@ import { motion } from "framer-motion";
 const CertificateSection = () => {
   const certificates = [
     {
-      id: "coursera-python",
-      title: "Python for Data Science, AI & Development",
-      issuer: "Coursera (IBM)",
+      id: "neural-networks",
+      title: "Neural Networks and Deep Learning",
+      issuer: "Coursera (Deeplearning.ai)",
       date: "June 2023",
       credentialId: "XE49RI61JPSP",
       verificationUrl: "https://www.coursera.org/account/accomplishments/verify/XE49RI61JPSP",
-      category: "data-science",
+      category: "ai",
+      icon: <GraduationCap className="h-5 w-5 text-portfolio-accent" />
+    },
+    {
+      id: "lean-in-hacks",
+      title: "Lean In Hacks 6.0",
+      issuer: "Lean In Organization",
+      date: "October 2023",
+      verificationUrl: "https://drive.google.com/file/d/19cEkkir3ztSdymEthC_hh1jyBL_T3OGI/view?usp=sharing",
+      category: "hackathon",
+      icon: <Badge className="h-5 w-5 text-portfolio-accent" />
+    },
+    {
+      id: "diya-making",
+      title: "Diya Making Competition",
+      issuer: "Cultural Committee",
+      date: "November 2023",
+      verificationUrl: "https://drive.google.com/file/d/1CrgL9VJ3E8YoOwbNuGAnGALXzPd4Z-Wd/view?usp=sharing",
+      category: "creative",
       icon: <FileText className="h-5 w-5 text-portfolio-accent" />
     },
     {
@@ -64,11 +82,12 @@ const CertificateSection = () => {
         </motion.p>
 
         <Tabs defaultValue="all" className="w-full max-w-4xl mx-auto">
-          <TabsList className="grid grid-cols-4 mb-8">
+          <TabsList className="grid grid-cols-5 mb-8">
             <TabsTrigger value="all">All</TabsTrigger>
-            <TabsTrigger value="data-science">Data Science</TabsTrigger>
-            <TabsTrigger value="ai">AI</TabsTrigger>
+            <TabsTrigger value="ai">AI/ML</TabsTrigger>
             <TabsTrigger value="cloud">Cloud</TabsTrigger>
+            <TabsTrigger value="hackathon">Hackathons</TabsTrigger>
+            <TabsTrigger value="creative">Creative</TabsTrigger>
           </TabsList>
           
           <TabsContent value="all" className="mt-0">
@@ -83,7 +102,7 @@ const CertificateSection = () => {
             </div>
           </TabsContent>
           
-          {["data-science", "ai", "cloud"].map((category) => (
+          {["ai", "cloud", "hackathon", "creative"].map((category) => (
             <TabsContent key={category} value={category} className="mt-0">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {certificates
