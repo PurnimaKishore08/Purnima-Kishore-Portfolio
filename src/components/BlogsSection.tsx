@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -77,8 +76,6 @@ Staying updated with research papers (arXiv, Google Scholar) and industry trends
 Every small breakthrough—whether fixing a bug or improving model accuracy—feels like a victory. If you're just starting, remember: everyone begins somewhere. The field of AI and ML can seem intimidating at first, but with consistent effort, things start to make sense. Don't be afraid to ask questions, experiment, and fail forward.
 
 Are you also learning AIML? What's your experience been like? Let's connect and learn together! 🚀
-
-#ArtificialIntelligence #MachineLearning #AIML #DataScience #DeepLearning #TechJourney #DataStructures
       `
     },
     {
@@ -176,7 +173,6 @@ Are you also learning AIML? What's your experience been like? Let's connect and 
                         .replace(/### (.*)/g, '<h3 class="text-lg font-bold mt-4 mb-2">$1</h3>')
                         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                         .replace(/- (.*)/g, '<li class="ml-6 list-disc">$1</li>')
-                        .replace(/#([A-Za-z]+)/g, '<span class="text-portfolio-accent">#$1</span>') 
                         .split('\n\n').join('</p><p>')
                     }} 
                   />
