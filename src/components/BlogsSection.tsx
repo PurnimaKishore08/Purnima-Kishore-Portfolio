@@ -61,9 +61,9 @@ const BlogsSection = () => {
           <Button 
             variant="outline"
             className="border-portfolio-accent text-portfolio-accent hover:bg-portfolio-accent hover:text-white"
-            asChild
+            onClick={() => window.open('https://medium.com/', '_blank')}
           >
-            <a href="#">View All Blog Posts</a>
+            View All Blog Posts
           </Button>
         </motion.div>
       </div>

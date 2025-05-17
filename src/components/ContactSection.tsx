@@ -168,6 +168,22 @@ const ContactSection = () => {
                 <div className="flex items-start space-x-4">
                   <div className="text-portfolio-accent text-xl">👩‍💻</div>
                   <div>
+                    <h4 className="font-medium">GitHub</h4>
+                    <a 
+                      href="https://github.com/PurnimaKishore08" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-portfolio-text-muted hover:text-portfolio-accent transition-colors flex items-center gap-1"
+                    >
+                      github.com/PurnimaKishore08
+                      <ExternalLink size={14} />
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="text-portfolio-accent text-xl">👩‍💻</div>
+                  <div>
                     <h4 className="font-medium">LinkedIn</h4>
                     <a 
                       href="https://linkedin.com/in/purnima-kishore-02a405215" 
