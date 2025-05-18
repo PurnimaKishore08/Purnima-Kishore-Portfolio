@@ -69,7 +69,7 @@ I’m passionate about contributing to meaningful tech that bridges the gap betw
                   <h4 className="text-xl font-semibold text-portfolio-accent">Diploma in Electronics & Communication Engineering</h4>
                   <p className="text-portfolio-text-muted">2020–2023</p>
                   <p className="mt-2">Pusa Institute of Technology, Delhi</p>
-                  <p className="text-sm italic mt-1">77.51%</p>
+                  
                 </div>
               </div>
               
