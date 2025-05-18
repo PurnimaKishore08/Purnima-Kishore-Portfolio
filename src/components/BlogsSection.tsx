@@ -13,6 +13,7 @@ import { Separator } from "@/components/ui/separator";
 import { blogsData } from "@/data/blogsData";
 import BlogCard from "./BlogCard";
 import type { BlogPost } from "@/data/blogsData";
+import { Link } from "react-router-dom";
 
 const BlogsSection = () => {
   const [selectedBlog, setSelectedBlog] = useState<BlogPost | null>(null);
@@ -41,7 +42,7 @@ const BlogsSection = () => {
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {blogsData.map((blog, index) => (
+          {blogsData.slice(0, 3).map((blog, index) => (
             <BlogCard 
               key={blog.id}
               blog={blog}
@@ -58,13 +59,14 @@ const BlogsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <Button 
-            variant="outline"
-            className="border-portfolio-accent text-portfolio-accent hover:bg-portfolio-accent hover:text-white"
-            onClick={() => window.open('https://medium.com/', '_blank')}
-          >
-            View All Blog Posts
-          </Button>
+          <Link to="/blogs">
+            <Button 
+              variant="outline"
+              className="border-portfolio-accent text-portfolio-accent hover:bg-portfolio-accent hover:text-white"
+            >
+              View All Blog Posts
+            </Button>
+          </Link>
         </motion.div>
       </div>
 
