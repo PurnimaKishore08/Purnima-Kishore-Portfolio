@@ -61,7 +61,7 @@ const BlogsSection = () => {
           <Button 
             variant="outline"
             className="border-portfolio-accent text-portfolio-accent hover:bg-portfolio-accent hover:text-white"
-            onClick={() => window.open('https://medium.com/@purnimaKishore', '_blank')}
+            onClick={() => window.open('https://medium.com/', '_blank')}
           >
             View All Blog Posts
           </Button>
