@@ -1,6 +1,5 @@
 
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,20 +32,20 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Link to="/" className="text-portfolio-accent text-2xl font-bold">Purnima<span className="text-portfolio-text">.K</span></Link>
+          <span className="text-portfolio-accent text-2xl font-bold">Purnima<span className="text-portfolio-text">.K</span></span>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link to="/#home" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Home</Link>
-          <Link to="/#about" className="text-portfolio-text hover:text-portfolio-accent transition-colors">About</Link>
-          <Link to="/#experience" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Experience</Link>
-          <Link to="/#skills" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Skills</Link>
-          <Link to="/#services" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Services</Link>
-          <Link to="/#projects" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Projects</Link>
-          <Link to="/#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Certificates</Link>
-          <Link to="/blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Blogs</Link>
-          <Link to="/#contact" className="button-primary">Contact Me</Link>
+          <a href="#home" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Home</a>
+          <a href="#about" className="text-portfolio-text hover:text-portfolio-accent transition-colors">About</a>
+          <a href="#experience" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Experience</a>
+          <a href="#skills" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Skills</a>
+          <a href="#services" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Services</a>
+          <a href="#projects" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Projects</a>
+          <a href="#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Certificates</a>
+          <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Blogs</a>
+          <a href="#contact" className="button-primary">Contact Me</a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -74,69 +73,69 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-portfolio-background shadow-lg py-4 animate-fade-in">
             <div className="flex flex-col space-y-4 px-4">
-              <Link 
-                to="/#home" 
+              <a 
+                href="#home" 
                 className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
-              </Link>
-              <Link 
-                to="/#about" 
+              </a>
+              <a 
+                href="#about" 
                 className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
-              </Link>
-              <Link 
-                to="/#experience" 
+              </a>
+              <a 
+                href="#experience" 
                 className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Experience
-              </Link>
-              <Link 
-                to="/#skills" 
+              </a>
+              <a 
+                href="#skills" 
                 className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Skills
-              </Link>
-              <Link 
-                to="/#services" 
+              </a>
+              <a 
+                href="#services" 
                 className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Services
-              </Link>
-              <Link 
-                to="/#projects" 
+              </a>
+              <a 
+                href="#projects" 
                 className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Projects
-              </Link>
-              <Link 
-                to="/#certificates" 
+              </a>
+              <a 
+                href="#certificates" 
                 className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Certificates
-              </Link>
-              <Link 
-                to="/blogs" 
+              </a>
+              <a 
+                href="#blogs" 
                 className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Blogs
-              </Link>
-              <Link 
-                to="/#contact" 
+              </a>
+              <a 
+                href="#contact" 
                 className="button-primary inline-block text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact Me
-              </Link>
+              </a>
             </div>
           </div>
         )}
