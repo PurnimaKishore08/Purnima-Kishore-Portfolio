@@ -54,15 +54,15 @@ const Navbar = () => {
         isScrolled ? 'bg-portfolio-background/90 backdrop-blur-lg shadow-md py-3' : 'py-5'
       }`}
     >
-      <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-between items-center">
+      <div className="container mx-auto px-4 md:grid md:grid-cols-3 items-center">
         <div className="flex items-center">
           <Link to="/" className="text-portfolio-accent text-2xl font-bold">
             Purnima<span className="text-portfolio-text">.K</span>
           </Link>
         </div>
 
-        {/* Desktop Navigation - Now centered */}
-        <div className="hidden md:flex items-center justify-center space-x-8 mt-4 md:mt-0">
+        {/* Desktop Navigation - Centered */}
+        <div className="hidden md:flex items-center justify-center space-x-6 lg:space-x-8 col-span-1">
           {location.pathname === '/' ? (
             <>
               <a href="#home" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'home')}>Home</a>
@@ -73,14 +73,21 @@ const Navbar = () => {
               <a href="#projects" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'projects')}>Projects</a>
               <a href="#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'certificates')}>Certificates</a>
               <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'blogs')}>Blogs</a>
-              <a href="#contact" className="button-primary" onClick={(e) => handleNavigation(e, 'contact')}>Contact Me</a>
             </>
           ) : (
             <>
               <Link to="/" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Home</Link>
               <Link to="/blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Blogs</Link>
-              <Link to="/#contact" className="button-primary">Contact Me</Link>
             </>
+          )}
+        </div>
+        
+        {/* Contact button - Right aligned */}
+        <div className="hidden md:flex justify-end">
+          {location.pathname === '/' ? (
+            <a href="#contact" className="button-primary" onClick={(e) => handleNavigation(e, 'contact')}>Contact Me</a>
+          ) : (
+            <Link to="/#contact" className="button-primary">Contact Me</Link>
           )}
         </div>
 
