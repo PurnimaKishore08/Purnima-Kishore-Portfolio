@@ -32,12 +32,14 @@ const Navbar = () => {
 
   // Function to handle navigation - for hash links on the homepage
   const handleNavigation = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
+    e.preventDefault();
+    
     if (location.pathname !== '/') {
-      // If not on homepage, don't prevent default behavior
+      // If not on homepage, navigate to homepage with hash
+      window.location.href = `/#${target}`;
       return;
     }
     
-    e.preventDefault();
     const element = document.getElementById(target);
     if (element) {
       window.scrollTo({
@@ -77,6 +79,7 @@ const Navbar = () => {
           ) : (
             <>
               <Link to="/" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Home</Link>
+              <Link to="/#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Certificates</Link>
               <Link to="/blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Blogs</Link>
             </>
           )}
@@ -131,6 +134,7 @@ const Navbar = () => {
               ) : (
                 <>
                   <Link to="/" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={closeMobileMenu}>Home</Link>
+                  <Link to="/#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={closeMobileMenu}>Certificates</Link>
                   <Link to="/blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={closeMobileMenu}>Blogs</Link>
                   <Link to="/#contact" className="button-primary inline-block text-center" onClick={closeMobileMenu}>Contact Me</Link>
                 </>
