@@ -54,15 +54,15 @@ const Navbar = () => {
         isScrolled ? 'bg-portfolio-background/90 backdrop-blur-lg shadow-md py-3' : 'py-5'
       }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-between items-center">
         <div className="flex items-center">
           <Link to="/" className="text-portfolio-accent text-2xl font-bold">
             Purnima<span className="text-portfolio-text">.K</span>
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        {/* Desktop Navigation - Now centered */}
+        <div className="hidden md:flex items-center justify-center space-x-8 mt-4 md:mt-0">
           {location.pathname === '/' ? (
             <>
               <a href="#home" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'home')}>Home</a>
@@ -86,7 +86,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-portfolio-text hover:text-portfolio-accent"
+          className="md:hidden text-portfolio-text hover:text-portfolio-accent absolute top-5 right-4"
           onClick={toggleMobileMenu}
           aria-label="Toggle Menu"
         >
