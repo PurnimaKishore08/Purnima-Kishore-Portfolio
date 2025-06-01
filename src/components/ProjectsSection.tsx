@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 interface Project {
   title: string;
@@ -56,7 +55,8 @@ const ProjectsSection = () => {
     category: "AI/ML",
     description: "Developed an AI/ML model that analyzes lifestyle habits to predict obesity risk factors with 89% accuracy.",
     image: "🏋️",
-    technologies: ["Python", "TensorFlow", "Scikit-learn", "Pandas"]
+    technologies: ["Python", "TensorFlow", "Scikit-learn", "Pandas"],
+    sourceCode: "https://github.com/PurnimaKishore08/-Data-Driven-Estimation-of-Obesity-Risk-from-Lifestyle-Habits"
   }, {
     title: "E-commerce Customer Segmentation",
     category: "Data Science",
@@ -68,7 +68,8 @@ const ProjectsSection = () => {
     category: "AI Application",
     description: "A virtual AI fashion assistant that provides style recommendations based on user preferences and trends.",
     image: "👗",
-    technologies: ["Python", "Computer Vision", "React", "Flask"]
+    technologies: ["Python", "Computer Vision", "React", "Flask"],
+    sourceCode: "https://github.com/PurnimaKishore08/Fashion-Sensei-Virtual-Fashion-Mentor"
   }, {
     title: "Jarvis Speech System",
     category: "Speech AI",
