@@ -219,7 +219,7 @@ const ContactSection = () => {
                     <h4 className="font-medium">Resume</h4>
                     <div className="mt-2">
                       <a 
-                        href="https://drive.google.com/file/d/1L1YKhwV1uFGak2HlTexc6gDvMCjdcXQl/view?usp=sharing" 
+                        href="https://drive.google.com/file/d/11xXawjQmcRUuOMp0fkgFdtWknNl_d9mb/view?usp=sharing" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="flex items-center gap-2 button-outline text-sm px-4 py-2"
