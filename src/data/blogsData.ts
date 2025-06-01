@@ -75,11 +75,84 @@ Are you also learning AIML? What's your experience been like? Let's connect and 
   },
   {
     id: "blog-2",
-    title: "Getting Started with TensorFlow",
-    excerpt: "A step-by-step guide to setting up your first deep learning project using TensorFlow.",
-    date: "August 20, 2023",
-    readTime: "8 min read",
+    title: "Getting Started with TensorFlow – A Student's Perspective",
+    excerpt: "A beginner-friendly guide to understanding TensorFlow from a student's perspective, covering why it's great for beginners and how to get started with your first ML projects.",
+    date: "June 1, 2025",
+    readTime: "6 min read",
     link: "#",
+    fullContent: `
+## 🤖 Getting Started with TensorFlow – A Student's Perspective
+
+Hey there! 👋
+
+If you're someone like me who's just stepping into the world of Machine Learning, then chances are you've heard about TensorFlow. When I first started learning about AI and ML, it felt a bit overwhelming — but trust me, once you get started, it's actually super exciting (and not as scary as it seems 😅).
+
+So here's a simple blog to help fellow students get started with TensorFlow — no prior experience needed!
+
+## 💡 So… What is TensorFlow?
+
+Think of TensorFlow as a toolbox 🧰 created by Google that helps you build machine learning models. These models can learn from data, make predictions, and solve problems—like recognizing your handwriting or recommending what movie you should watch next. 🍿
+
+It's super powerful, but also beginner-friendly thanks to its Keras API, which is perfect for students like us who are just learning the ropes.
+
+## 📌 Why I Chose TensorFlow
+
+When I started looking for ML frameworks to learn, TensorFlow stood out because:
+
+- 🧱 It's beginner-friendly (once you understand the basics)
+- 🔧 Works on any device — laptop, phone, even Raspberry Pi!
+- 🌐 Huge community — so if I'm stuck, chances are someone else already asked that question on Stack Overflow 😅
+- 📘 Tons of free resources, tutorials, and courses available online
+
+Honestly, it felt like a no-brainer to go with TensorFlow to build my first ML projects.
+
+## 🚀 My Learning Journey (So Far)
+
+To get started, I installed Python (you probably already have it for college assignments), then installed TensorFlow using a single command.
+
+From there, I followed beginner-friendly tutorials like:
+
+- Digit recognition with MNIST dataset (teaching a computer to read handwritten numbers ✍️)
+- Image classification (like whether it's a cat or a dog 🐱🐶)
+- Simple text classification (to understand if a review is positive or negative 💬)
+
+These projects not only helped me understand how ML works, but they were also super fun to build!
+
+## 📚 Some Awesome Resources That Helped Me
+
+Here are some resources I used (and still go back to):
+
+- 🌐 TensorFlow Official Website
+- 🎥 TensorFlow's YouTube Channel (they explain things really well!)
+- 📖 FreeCodeCamp's tutorials
+- 🎓 Coursera's "TensorFlow in Practice" specialization by Andrew Ng
+
+**Pro tip**: Don't just watch—try things out. That's where the real learning happens!
+
+## 🧠 What You Can Build with TensorFlow (Even as a Student!)
+
+Once you understand the basics, the possibilities are endless:
+
+- 🤖 Chatbots
+- 📷 Face detection apps
+- 🎶 Music genre prediction
+- 🩺 Health prediction systems
+- 📱 Even deploy models on mobile apps!
+
+You don't need to be an expert—just keep learning and experimenting. One small project at a time. 🙌
+
+## ✨ Final Thoughts
+
+If you're a student like me, just remember: you don't need to know everything to get started. Start small. Break it down. Watch a tutorial, try it out, break things (yes, that happens a lot 😅), and learn from it.
+
+TensorFlow makes it possible for students to build real ML projects — and honestly, it feels amazing to see your model actually work after hours of debugging!
+
+So go ahead, give it a shot. If I can do it, so can you. 💪
+
+Happy coding & learning! 🧑‍💻📚
+
+— Proud ML Engineer
+    `
   },
   {
     id: "blog-3",
