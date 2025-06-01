@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 interface Project {
   title: string;
@@ -5,6 +6,8 @@ interface Project {
   description: string;
   image: string;
   technologies: string[];
+  liveDemo?: string;
+  sourceCode?: string;
 }
 const ProjectCard = ({
   project,
@@ -41,6 +44,14 @@ const ProjectCard = ({
 const ProjectsSection = () => {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
   const projects: Project[] = [{
+    title: "Tic-Tac-Toe Game",
+    category: "Web Application",
+    description: "A web-based version of the classic two-player Tic-Tac-Toe game with real-time win detection and responsive design.",
+    image: "🎯",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    liveDemo: "https://purnimakishore08.github.io/Tic-Tac-Toe/",
+    sourceCode: "https://github.com/PurnimaKishore08/Tic-Tac-Toe"
+  }, {
     title: "Obesity Risk Prediction",
     category: "AI/ML",
     description: "Developed an AI/ML model that analyzes lifestyle habits to predict obesity risk factors with 89% accuracy.",
@@ -118,7 +129,9 @@ const ProjectsSection = () => {
                 </div>
                 
                 <p className="text-lg mb-6">
-                  {activeProject.title === "Obesity Risk Prediction" ? 
+                  {activeProject.title === "Tic-Tac-Toe Game" ? 
+                    "Developed a web-based version of the classic two-player Tic-Tac-Toe game using core front-end technologies. The application allows two players to take turns placing their symbols (X or O) on a 3x3 grid. The game detects a win or draw condition in real-time and provides an option to restart the game. This project emphasizes clean UI, logical game flow, and JavaScript event handling. Key features include a fully interactive 3×3 game board, two-player functionality, real-time win and draw detection, game status updates and alerts, restart functionality, and responsive design for different screen sizes. The project demonstrates front-end web development skills, event handling, game state management, and building lightweight applications without frameworks - just pure HTML, CSS, and JavaScript."
+                    : activeProject.title === "Obesity Risk Prediction" ? 
                     "The obesity prediction project focuses on utilizing machine learning techniques to classify and predict obesity levels based on individual lifestyle data. The dataset includes 17 features such as age, gender, dietary habits, physical activity, smoking, alcohol consumption, and body measurements. Data preprocessing involved label encoding, BMI calculation, and standardization. Among various models, the Random Forest classifier achieved the highest accuracy of 91%, effectively handling complex, non-linear relationships. In regression analysis, Random Forest again outperformed with a low RMSE of 7.18 and high R² score of 0.93. K-Means clustering revealed five distinct lifestyle patterns. The results demonstrate the effectiveness of ensemble methods in accurately estimating obesity levels from behavioral and physiological indicators, with potential applications in health risk assessment and personalized recommendations." 
                     : activeProject.title === "E-commerce Customer Segmentation" ?
                     "During my summer training at Kurious Learning Labs Pvt Ltd, I worked on this e-commerce customer segmentation project using machine learning techniques. The objective was to segment customers into distinct groups based on their purchasing behavior and engagement patterns to support personalized marketing and customer retention strategies. I used Python and libraries like Pandas, Scikit-learn, and Seaborn to perform data preprocessing, exploratory data analysis, and implemented the KMeans clustering algorithm. Dimensionality reduction techniques such as PCA and t-SNE were applied for better visualization of clusters. The project enabled actionable insights for targeted campaigns, focusing on high-value customers and improving business decision-making. This hands-on experience deepened my skills in data analysis, model building, and visualization, while reinforcing the importance of data-driven strategies in real-world applications."
@@ -141,6 +154,40 @@ const ProjectsSection = () => {
                       </span>)}
                   </div>
                 </div>
+                
+                {(activeProject.liveDemo || activeProject.sourceCode) && (
+                  <div className="mb-6">
+                    <h4 className="text-lg font-semibold mb-2">Links</h4>
+                    <div className="flex flex-wrap gap-3">
+                      {activeProject.liveDemo && (
+                        <a 
+                          href={activeProject.liveDemo} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="button-primary flex items-center justify-center gap-2"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                          Live Demo
+                        </a>
+                      )}
+                      {activeProject.sourceCode && (
+                        <a 
+                          href={activeProject.sourceCode} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="button-outline flex items-center justify-center gap-2"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                          </svg>
+                          Source Code
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                )}
                 
                 <div className="flex justify-end">
                   <button className="button-outline" onClick={() => setActiveProject(null)}>
