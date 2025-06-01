@@ -79,7 +79,7 @@ const Navbar = () => {
           ) : (
             <>
               <Link to="/" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Home</Link>
-              <Link to="/#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Certificates</Link>
+              <a href="/#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => { e.preventDefault(); window.location.href = '/#certificates'; }}>Certificates</a>
               <Link to="/blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors">Blogs</Link>
             </>
           )}
@@ -134,7 +134,7 @@ const Navbar = () => {
               ) : (
                 <>
                   <Link to="/" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={closeMobileMenu}>Home</Link>
-                  <Link to="/#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={closeMobileMenu}>Certificates</Link>
+                  <a href="/#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => { e.preventDefault(); window.location.href = '/#certificates'; closeMobileMenu(); }}>Certificates</a>
                   <Link to="/blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={closeMobileMenu}>Blogs</Link>
                   <Link to="/#contact" className="button-primary inline-block text-center" onClick={closeMobileMenu}>Contact Me</Link>
                 </>
