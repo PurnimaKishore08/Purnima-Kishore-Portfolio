@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Button } from './ui/button';
-import { FileText, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -209,25 +209,6 @@ const ContactSection = () => {
                       leetcode.com/u/Purnimakishore08/
                       <ExternalLink size={14} />
                     </a>
-                  </div>
-                </div>
-                
-                {/* Resume Download Button */}
-                <div className="flex items-start space-x-4 pt-4 border-t border-portfolio-background/20">
-                  <div className="text-portfolio-accent text-xl">📄</div>
-                  <div>
-                    <h4 className="font-medium">Resume</h4>
-                    <div className="mt-2">
-                      <a 
-                        href="https://drive.google.com/file/d/11xXawjQmcRUuOMp0fkgFdtWknNl_d9mb/view?usp=sharing" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="flex items-center gap-2 button-outline text-sm px-4 py-2"
-                      >
-                        <FileText size={16} />
-                        <span>Download Resume</span>
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>

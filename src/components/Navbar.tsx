@@ -30,9 +30,10 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
-  // Function to handle navigation - for hash links on the homepage
+  // Improved navigation function for hash links
   const handleNavigation = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
     e.preventDefault();
+    closeMobileMenu();
     
     if (location.pathname !== '/') {
       // If not on homepage, navigate to homepage with hash
@@ -40,34 +41,20 @@ const Navbar = () => {
       return;
     }
     
-    const element = document.getElementById(target);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 80,
-        behavior: 'smooth'
-      });
-      closeMobileMenu();
-    }
-  };
+    // Small delay to ensure DOM is ready
+    setTimeout(() => {
+      const element = document.getElementById(target);
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-  // Function to handle blogs navigation
-  const handleBlogsNavigation = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    
-    if (location.pathname !== '/') {
-      // If not on homepage, navigate to homepage first then to blogs section
-      window.location.href = '/#blogs';
-      return;
-    }
-    
-    const element = document.getElementById('blogs');
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 80,
-        behavior: 'smooth'
-      });
-      closeMobileMenu();
-    }
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 100);
   };
 
   return (
@@ -94,7 +81,7 @@ const Navbar = () => {
               <a href="#services" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'services')}>Services</a>
               <a href="#projects" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'projects')}>Projects</a>
               <a href="#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'certificates')}>Certificates</a>
-              <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={handleBlogsNavigation}>Blogs</a>
+              <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'blogs')}>Blogs</a>
             </>
           ) : (
             <>
@@ -148,7 +135,7 @@ const Navbar = () => {
                   <a href="#services" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'services')}>Services</a>
                   <a href="#projects" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'projects')}>Projects</a>
                   <a href="#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'certificates')}>Certificates</a>
-                  <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={handleBlogsNavigation}>Blogs</a>
+                  <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'blogs')}>Blogs</a>
                   <a href="#contact" className="button-primary inline-block text-center" onClick={(e) => handleNavigation(e, 'contact')}>Contact Me</a>
                 </>
               ) : (
