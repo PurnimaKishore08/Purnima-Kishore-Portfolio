@@ -50,6 +50,26 @@ const Navbar = () => {
     }
   };
 
+  // Function to handle blogs navigation
+  const handleBlogsNavigation = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    
+    if (location.pathname !== '/') {
+      // If not on homepage, navigate to homepage first then to blogs section
+      window.location.href = '/#blogs';
+      return;
+    }
+    
+    const element = document.getElementById('blogs');
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 80,
+        behavior: 'smooth'
+      });
+      closeMobileMenu();
+    }
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -74,7 +94,7 @@ const Navbar = () => {
               <a href="#services" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'services')}>Services</a>
               <a href="#projects" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'projects')}>Projects</a>
               <a href="#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'certificates')}>Certificates</a>
-              <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'blogs')}>Blogs</a>
+              <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={handleBlogsNavigation}>Blogs</a>
             </>
           ) : (
             <>
@@ -128,7 +148,7 @@ const Navbar = () => {
                   <a href="#services" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'services')}>Services</a>
                   <a href="#projects" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'projects')}>Projects</a>
                   <a href="#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'certificates')}>Certificates</a>
-                  <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'blogs')}>Blogs</a>
+                  <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={handleBlogsNavigation}>Blogs</a>
                   <a href="#contact" className="button-primary inline-block text-center" onClick={(e) => handleNavigation(e, 'contact')}>Contact Me</a>
                 </>
               ) : (
