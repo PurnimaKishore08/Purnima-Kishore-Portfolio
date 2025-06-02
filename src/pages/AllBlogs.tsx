@@ -2,20 +2,17 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import BlogCard from "@/components/BlogCard";
+import BlogModal from "@/components/BlogModal";
 import { blogsData, BlogPost } from "@/data/blogsData";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import { Separator } from "@/components/ui/separator";
 
 const AllBlogs = () => {
   const [selectedBlog, setSelectedBlog] = useState<BlogPost | null>(null);
+
+  const handleCloseModal = () => {
+    setSelectedBlog(null);
+  };
 
   return (
     <div className="min-h-screen bg-portfolio-background text-portfolio-text">
@@ -54,41 +51,11 @@ const AllBlogs = () => {
       </section>
       <Footer />
       
-      {/* Blog Post Dialog */}
-      <Dialog open={!!selectedBlog} onOpenChange={(open) => !open && setSelectedBlog(null)}>
-        <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
-          {selectedBlog && (
-            <>
-              <DialogHeader>
-                <DialogTitle className="text-2xl font-bold">{selectedBlog.title}</DialogTitle>
-                <DialogDescription className="flex items-center gap-2 text-sm mt-2">
-                  <span className="text-portfolio-accent">{selectedBlog.date}</span>
-                  <span>•</span>
-                  <span>{selectedBlog.readTime}</span>
-                </DialogDescription>
-              </DialogHeader>
-              <Separator className="my-4" />
-              <div className="prose prose-invert max-w-none">
-                {selectedBlog.fullContent ? (
-                  <div 
-                    className="space-y-4 text-portfolio-text"
-                    dangerouslySetInnerHTML={{ 
-                      __html: selectedBlog.fullContent
-                        .replace(/## (.*)/g, '<h2 class="text-xl font-bold text-portfolio-accent mt-6 mb-3">$1</h2>')
-                        .replace(/### (.*)/g, '<h3 class="text-lg font-bold mt-4 mb-2">$1</h3>')
-                        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                        .replace(/- (.*)/g, '<li class="ml-6 list-disc">$1</li>')
-                        .split('\n\n').join('</p><p>')
-                    }} 
-                  />
-                ) : (
-                  <p>This blog post is coming soon!</p>
-                )}
-              </div>
-            </>
-          )}
-        </DialogContent>
-      </Dialog>
+      <BlogModal 
+        blog={selectedBlog}
+        isOpen={!!selectedBlog}
+        onClose={handleCloseModal}
+      />
       
       {/* Back to top button */}
       <button
