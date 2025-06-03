@@ -12,8 +12,16 @@ const CertificateSection = () => {
       title: "Neural Networks and Deep Learning",
       issuer: "Coursera (Deeplearning.ai)",
       date: "June 2023",
-      credentialId: "XE49RI61JPSP",
       verificationUrl: "https://www.coursera.org/account/accomplishments/verify/XE49RI61JPSP",
+      category: "ai",
+      icon: <GraduationCap className="h-5 w-5 text-portfolio-accent" />
+    },
+    {
+      id: "graph-theory",
+      title: "Certificate of Graph Theory",
+      issuer: "Academic Institution",
+      date: "2024",
+      verificationUrl: "https://drive.google.com/file/d/1DheVuRjZS-i9GcUasZyPPumKGQ6IlrH6/view?usp=sharing",
       category: "ai",
       icon: <GraduationCap className="h-5 w-5 text-portfolio-accent" />
     },
