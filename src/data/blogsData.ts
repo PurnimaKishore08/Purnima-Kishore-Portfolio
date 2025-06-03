@@ -13,7 +13,7 @@ export const blogsData: BlogPost[] = [
     id: "blog-1",
     title: "My Journey into AIML - Why I Chose It and What I've Learned So Far",
     excerpt: "Explore my personal journey into the world of Artificial Intelligence and Machine Learning, including why I chose this path and the valuable lessons I've learned along the way.",
-    date: "January 15, 2024",
+    date: "May 11, 2025",
     readTime: "7 min read",
     link: "#",
     fullContent: `
@@ -76,7 +76,7 @@ Are you also learning AIML? What's your experience been like? Let's connect and 
     id: "blog-2",
     title: "Getting Started with TensorFlow – A Student's Perspective",
     excerpt: "A beginner-friendly guide to understanding TensorFlow from a student's perspective, covering why it's great for beginners and how to get started with your first ML projects.",
-    date: "March 8, 2024",
+    date: "May 18, 2025",
     readTime: "6 min read",
     link: "#",
     fullContent: `
@@ -157,7 +157,7 @@ Happy coding & learning! 🧑‍💻📚
     id: "blog-3",
     title: "Ethics in Artificial Intelligence and Machine Learning",
     excerpt: "Examining the ethical considerations and challenges in developing responsible AI systems.",
-    date: "May 22, 2024",
+    date: "May 28, 2025",
     readTime: "6 min read",
     link: "#",
     fullContent: `
@@ -221,7 +221,7 @@ Ethical AI is about more than avoiding harm—it's about designing systems that 
     id: "blog-4",
     title: "🐛 Why Software Developers Secretly Love Bugs (Sometimes)",
     excerpt: "Discover why developers don't just hate bugs—sometimes they actually love them! Learn how bugs can be puzzles to solve and stepping stones to mastering coding.",
-    date: "August 10, 2024",
+    date: "June 3, 2025",
     readTime: "5 min read",
     link: "#",
     fullContent: `
