@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge, GraduationCap, FileText } from "lucide-react";
@@ -19,7 +20,7 @@ const CertificateSection = () => {
       id: "graph-theory",
       title: "Certificate of Graph Theory",
       issuer: "Academic Institution",
-      date: "March 2, 2025",
+      date: "2025",
       verificationUrl: "https://drive.google.com/file/d/1DheVuRjZS-i9GcUasZyPPumKGQ6IlrH6/view?usp=sharing",
       category: "ai",
       icon: <GraduationCap className="h-5 w-5 text-portfolio-accent" />
@@ -28,7 +29,7 @@ const CertificateSection = () => {
       id: "lean-in-hacks",
       title: "Lean In Hacks 6.0",
       issuer: "Lean In Organization",
-      date: "October 2023",
+      date: "March 2, 2025",
       verificationUrl: "https://drive.google.com/file/d/19cEkkir3ztSdymEthC_hh1jyBL_T3OGI/view?usp=sharing",
       category: "hackathon",
       icon: <Badge className="h-5 w-5 text-portfolio-accent" />
