@@ -1,3 +1,4 @@
+
 export interface BlogPost {
   id: string;
   title: string;
@@ -279,6 +280,57 @@ Bugs aren't just obstacles—they're stepping stones to mastering coding.
 Next time you hit a bug, try to enjoy the challenge instead of freaking out. It's where you learn the most.
 
 Happy debugging! 🐞🧑‍💻
+    `
+  },
+  {
+    id: "blog-5",
+    title: "🕑 Coding at 2AM and Other Weird Habits That Actually Help Me Learn",
+    excerpt: "Discover the unconventional learning habits that boost productivity, from late-night coding sessions to talking to yourself - and why being 'weird' might be your secret weapon.",
+    date: "June 11, 2025",
+    readTime: "6 min read",
+    link: "#",
+    fullContent: `
+## 🕑 Coding at 2AM and Other Weird Habits That Actually Help Me Learn
+
+There's something oddly magical about the world when everyone else is asleep. It's quiet, peaceful, and for me — it's when the best learning happens. While it may sound a little chaotic or even unhealthy to some, I've discovered that some of my weirdest habits are actually my biggest productivity boosters. Let's talk about them — maybe they'll help you too.
+
+## 🌙 1. Coding at 2AM: My Flow Zone
+
+Most of my best ideas have been born when the clock hits 2 AM. It's not just about being a night owl — it's about the mental clarity that comes when there are zero distractions. No pings, no calls, just me and my code. At this hour, I get into deep focus and tackle the things I've been procrastinating on all day.
+
+(Yes, sometimes that includes Googling "how to fix undefined is not a function" for the hundredth time.)
+
+## 🎧 2. Lo-Fi Music and Rain Sounds on Loop
+
+I can't study or code in complete silence. So I've built the perfect learning environment using a mix of lo-fi beats, rain sounds, and sometimes, ambient café noise. It tricks my brain into thinking I'm in a cozy library or coffee shop — and suddenly, debugging feels like less of a chore.
+
+Lo-Fi Girl + Rainy Mood combo. Trust me, it works.
+
+## 🍕 3. Midnight Snacks = Motivation
+
+This might not be nutritionist-approved, but a warm cup of coffee or a slice of leftover pizza somehow boosts my mood when I hit a bug wall. I treat it as a mini reward system: fix a major bug → earn a cookie. Simple, effective, and delicious.
+
+## 📓 4. Writing to Remember
+
+After a long coding session, I scribble quick notes — in messy handwriting or Notion pages — to explain the concept to myself. No fancy words. Just plain, dumbed-down explanations like "PCA = squish data in a smart way."
+
+Oddly, this habit has helped me retain concepts far better than watching 10 tutorials in a row.
+
+## 💬 5. Talking to Myself (Yes, Really)
+
+Sometimes, I pretend I'm explaining a topic to a beginner… who's imaginary. Out loud. It helps me test if I actually understand it or if I just nodded along during a YouTube video. It feels silly at first, but it's one of the most effective tricks I've learned.
+
+## 🌟 Final Thoughts: It's Okay to Be "Weird"
+
+The truth is: there's no single right way to learn. If late-night sprints, lo-fi beats, and pizza-powered bug fixes help me grow — I'll take it. We all have quirks. What matters is using them to your advantage.
+
+So, if you're ever feeling out of sync with the "typical" routine, remember this:
+
+You don't have to be a morning person to make magic happen. You just have to find your rhythm — even if it starts at 2AM.
+
+## 💬 Over to You
+
+Do you have any weird habits that actually work for you? I'd love to hear them. Drop me a message or connect — let's celebrate the unconventional ways we grow.
     `
   }
 ];
