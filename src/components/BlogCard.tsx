@@ -23,7 +23,7 @@ const BlogCard = ({ blog, index, onReadMore }: BlogCardProps) => {
         <CardHeader className="pb-4">
           <div className="flex items-center gap-2 mb-1">
             <BookOpen className="h-4 w-4 text-portfolio-accent" />
-            <CardDescription className="text-sm">{blog.date} · {blog.readTime}</CardDescription>
+            <CardDescription className="text-sm">{blog.date}</CardDescription>
           </div>
           <CardTitle className="text-lg line-clamp-2">{blog.title}</CardTitle>
         </CardHeader>

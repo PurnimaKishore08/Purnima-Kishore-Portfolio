@@ -1,9 +1,9 @@
+
 export interface BlogPost {
   id: string;
   title: string;
   excerpt: string;
   date: string;
-  readTime: string;
   link: string;
   fullContent?: string;
 }
@@ -14,7 +14,6 @@ export const blogsData: BlogPost[] = [
     title: "My Journey into AIML - Why I Chose It and What I've Learned So Far",
     excerpt: "Explore my personal journey into the world of Artificial Intelligence and Machine Learning, including why I chose this path and the valuable lessons I've learned along the way.",
     date: "May 11, 2025",
-    readTime: "7 min read",
     link: "#",
     fullContent: `
 ## 🚀 My Journey into AIML – Why I Chose It and What I've Learned So Far
@@ -77,7 +76,6 @@ Are you also learning AIML? What's your experience been like? Let's connect and 
     title: "Getting Started with TensorFlow – A Student's Perspective",
     excerpt: "A beginner-friendly guide to understanding TensorFlow from a student's perspective, covering why it's great for beginners and how to get started with your first ML projects.",
     date: "May 18, 2025",
-    readTime: "6 min read",
     link: "#",
     fullContent: `
 ## 🤖 Getting Started with TensorFlow – A Student's Perspective
@@ -158,7 +156,6 @@ Happy coding & learning! 🧑‍💻📚
     title: "Ethics in Artificial Intelligence and Machine Learning",
     excerpt: "Examining the ethical considerations and challenges in developing responsible AI systems.",
     date: "May 28, 2025",
-    readTime: "6 min read",
     link: "#",
     fullContent: `
 ## 🧠 Ethics in Artificial Intelligence and Machine Learning
@@ -222,7 +219,6 @@ Ethical AI is about more than avoiding harm—it's about designing systems that 
     title: "🐛 Why Software Developers Secretly Love Bugs (Sometimes)",
     excerpt: "Discover why developers don't just hate bugs—sometimes they actually love them! Learn how bugs can be puzzles to solve and stepping stones to mastering coding.",
     date: "June 3, 2025",
-    readTime: "5 min read",
     link: "#",
     fullContent: `
 ## 🐛 Why Software Developers Secretly Love Bugs (Sometimes)
@@ -286,7 +282,6 @@ Happy debugging! 🐞🧑‍💻
     title: "🕑 Coding at 2AM and Other Weird Habits That Actually Help Me Learn",
     excerpt: "Discover the unconventional learning habits that boost productivity, from late-night coding sessions to talking to yourself - and why being 'weird' might be your secret weapon.",
     date: "June 11, 2025",
-    readTime: "6 min read",
     link: "#",
     fullContent: `
 ## 🕑 Coding at 2AM and Other Weird Habits That Actually Help Me Learn
@@ -337,7 +332,6 @@ Do you have any weird habits that actually work for you? I'd love to hear them. 
     title: "🎤 Breaking My Comfort Zone: From Shy Coder to Public Speaker",
     excerpt: "The journey from being a quiet, behind-the-scenes developer to confidently speaking in public - and why stepping out of your comfort zone might be the best decision you make.",
     date: "June 18, 2025",
-    readTime: "7 min read",
     link: "#",
     fullContent: `
 ## 🎤 Breaking My Comfort Zone: From Shy Coder to Public Speaker

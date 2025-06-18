@@ -25,8 +25,6 @@ const BlogModal = ({ blog, isOpen, onClose }: BlogModalProps) => {
               <DialogTitle className="text-2xl font-bold">{blog.title}</DialogTitle>
               <DialogDescription className="flex items-center gap-2 text-sm mt-2">
                 <span className="text-portfolio-accent">{blog.date}</span>
-                <span>•</span>
-                <span>{blog.readTime}</span>
               </DialogDescription>
             </DialogHeader>
             <Separator className="my-4" />
