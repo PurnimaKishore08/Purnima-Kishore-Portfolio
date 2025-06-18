@@ -1,4 +1,3 @@
-
 export interface BlogPost {
   id: string;
   title: string;
@@ -331,6 +330,81 @@ You don't have to be a morning person to make magic happen. You just have to fin
 ## 💬 Over to You
 
 Do you have any weird habits that actually work for you? I'd love to hear them. Drop me a message or connect — let's celebrate the unconventional ways we grow.
+    `
+  },
+  {
+    id: "blog-6",
+    title: "🎤 Breaking My Comfort Zone: From Shy Coder to Public Speaker",
+    excerpt: "The journey from being a quiet, behind-the-scenes developer to confidently speaking in public - and why stepping out of your comfort zone might be the best decision you make.",
+    date: "June 18, 2025",
+    readTime: "7 min read",
+    link: "#",
+    fullContent: `
+## 🎤 Breaking My Comfort Zone: From Shy Coder to Public Speaker
+
+If someone had told me a few years ago that I'd one day confidently speak in front of a crowd, I would have laughed nervously and said, "No way." I was the textbook definition of a quiet coder — comfortable behind a screen, typing in silence, and avoiding the spotlight.
+
+But somewhere between writing my first line of code and presenting my first tech talk, something changed.
+
+This is the story of how I went from being a shy, behind-the-scenes developer to someone who now embraces public speaking — and why stepping out of your comfort zone might just be the best decision you make.
+
+## 🤐 The "Quiet" Phase: Where I Started
+
+In my early days of college, I avoided any situation that required speaking in public. Team presentations? I'd stick to making the slides. Group discussions? I'd rather write notes. While I loved working on projects, I struggled with expressing ideas aloud, even when I had something valuable to contribute.
+
+Deep down, it wasn't a lack of ideas — it was fear:
+
+- Fear of being judged.
+- Fear of saying something "wrong."
+- Fear of people not listening.
+
+## 🚪 The Turning Point: A Small Nudge
+
+My turning point wasn't dramatic — it was subtle.
+
+During a project demo in class, my teammates nudged me to explain a feature I had built. I hesitated… but I did it. My voice trembled, my hands shook, but guess what? People actually listened.
+
+That one small moment showed me something powerful: your voice matters — even if it's shaky at first.
+
+## 🎙️ The Practice Phase: Embracing the Awkward
+
+Public speaking, like coding, gets better with practice. I started slowly:
+
+- Volunteering to present in team meetings.
+- Sharing project overviews in class.
+- Joining tech clubs and meetups as a listener, then as a participant.
+
+At first, I wrote scripts and practiced in front of mirrors. Over time, I learned to trust myself — to speak with the audience, not at them.
+
+## 🌱 Growth Beyond the Stage
+
+Becoming a public speaker didn't just improve my presentation skills — it transformed me:
+
+- I became more confident in explaining complex topics.
+- I learned to listen and respond in real-time.
+- I discovered how to connect with people — not just impress them.
+
+Whether it was explaining AI concepts in a workshop or speaking at a hackathon, I started to enjoy the process. What used to terrify me became a new way to grow.
+
+## 💡 My Advice to Fellow "Shy Coders"
+
+If you're someone who avoids the mic — I get it. It's uncomfortable. But here's what I've learned:
+
+- **Start small.** Even a short explanation in a group project is a win.
+- **Prepare, but don't over-script.** Let your understanding speak.
+- **Practice with friends.** Safe spaces build confidence.
+- **You don't need to be perfect.** You just need to be real.
+- **Your story is worth sharing.** Don't underestimate its impact.
+
+## 🎯 Final Thoughts
+
+Breaking my comfort zone wasn't a one-time decision. It was a slow, ongoing journey — but it's one of the most rewarding things I've ever done. Today, I still get butterflies before I speak, but they remind me that I'm growing.
+
+Because growth doesn't happen in your comfort zone — it starts just outside of it.
+
+So, if you're a quiet coder like I was, know this: you're allowed to take up space. Your voice matters. Your ideas deserve to be heard.
+
+And who knows? One day, you might find yourself speaking on a stage — and loving it.
     `
   }
 ];
