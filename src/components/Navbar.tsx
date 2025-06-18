@@ -81,6 +81,7 @@ const Navbar = () => {
               <a href="#services" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'services')}>Services</a>
               <a href="#projects" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'projects')}>Projects</a>
               <a href="#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'certificates')}>Certificates</a>
+              <a href="#resume" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'resume')}>Resume</a>
               <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => handleNavigation(e, 'blogs')}>Blogs</a>
             </>
           ) : (
@@ -92,6 +93,7 @@ const Navbar = () => {
               <a href="/#services" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => { e.preventDefault(); window.location.href = '/#services'; }}>Services</a>
               <a href="/#projects" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => { e.preventDefault(); window.location.href = '/#projects'; }}>Projects</a>
               <a href="/#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => { e.preventDefault(); window.location.href = '/#certificates'; }}>Certificates</a>
+              <a href="/#resume" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => { e.preventDefault(); window.location.href = '/#resume'; }}>Resume</a>
               <a href="/#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors" onClick={(e) => { e.preventDefault(); window.location.href = '/#blogs'; }}>Blogs</a>
               <Link to="/blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors">All Blogs</Link>
             </>
@@ -141,6 +143,7 @@ const Navbar = () => {
                   <a href="#services" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'services')}>Services</a>
                   <a href="#projects" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'projects')}>Projects</a>
                   <a href="#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'certificates')}>Certificates</a>
+                  <a href="#resume" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'resume')}>Resume</a>
                   <a href="#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => handleNavigation(e, 'blogs')}>Blogs</a>
                   <a href="#contact" className="button-primary inline-block text-center" onClick={(e) => handleNavigation(e, 'contact')}>Contact Me</a>
                 </>
@@ -153,6 +156,7 @@ const Navbar = () => {
                   <a href="/#services" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => { e.preventDefault(); window.location.href = '/#services'; closeMobileMenu(); }}>Services</a>
                   <a href="/#projects" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => { e.preventDefault(); window.location.href = '/#projects'; closeMobileMenu(); }}>Projects</a>
                   <a href="/#certificates" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => { e.preventDefault(); window.location.href = '/#certificates'; closeMobileMenu(); }}>Certificates</a>
+                  <a href="/#resume" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => { e.preventDefault(); window.location.href = '/#resume'; closeMobileMenu(); }}>Resume</a>
                   <a href="/#blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={(e) => { e.preventDefault(); window.location.href = '/#blogs'; closeMobileMenu(); }}>Blogs</a>
                   <Link to="/blogs" className="text-portfolio-text hover:text-portfolio-accent transition-colors py-2" onClick={closeMobileMenu}>All Blogs</Link>
                   <Link to="/#contact" className="button-primary inline-block text-center" onClick={closeMobileMenu}>Contact Me</Link>
