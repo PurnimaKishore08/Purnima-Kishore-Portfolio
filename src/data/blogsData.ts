@@ -1,4 +1,3 @@
-
 export interface BlogPost {
   id: string;
   title: string;
@@ -9,6 +8,63 @@ export interface BlogPost {
 }
 
 export const blogsData: BlogPost[] = [
+  {
+    id: "blog-7",
+    title: "📝 Balancing Projects, Classes & Internships: A Tech Student's Survival Guide",
+    excerpt: "Being a tech student today is like juggling flaming swords while riding a unicycle. Learn the tricks to balance it all without burning out from someone who's been there.",
+    date: "July 7, 2025",
+    link: "#",
+    fullContent: `
+## 📝 Balancing Projects, Classes & Internships: A Tech Student's Survival Guide
+
+Being a tech student today is like juggling flaming swords while riding a unicycle. On any given day, I might be debugging a Python script, submitting a class assignment, attending an internship meeting, and preparing for a hackathon — all before dinner.
+
+At first, it was overwhelming. But over time, I learned a few tricks to balance it all without burning out. Here's my survival guide, straight from experience.
+
+## 🧩 1. Learn to Prioritize
+
+Not everything needs to be done right now. I started categorizing tasks into:
+
+- **Urgent & Important** (submit assignments, attend interviews)
+- **Important but Not Urgent** (daily coding practice, portfolio building)
+- **Low Priority** (reorganizing files, over-polishing old projects)
+
+This helped me avoid last-minute panic and focus on what truly matters.
+
+## ⏰ 2. Use Time Blocks
+
+I stopped multitasking. Instead, I began setting dedicated time blocks for different tasks:
+
+- **Mornings**: Internship work
+- **Afternoons**: College classes/assignments
+- **Evenings**: Personal projects
+- **Sundays**: Pure chill (because rest is productive too)
+
+It wasn't perfect, but having a rough structure saved me from chaos.
+
+## 💬 3. Communicate Honestly
+
+Whether it's an internship mentor or a college professor, I learned that it's okay to say:
+
+- "I need more time."
+- "I'm currently overloaded."
+- "Can we reschedule?"
+
+Being honest doesn't make you unprofessional — it makes you human.
+
+## 🧠 4. Don't Compare, Reflect
+
+In a world of LinkedIn updates and GitHub streaks, it's easy to feel like you're not doing enough. I made peace with the fact that my journey is mine. I celebrate small wins now — a bug fixed, a module completed, a good review from my mentor.
+
+## 📌 Final Thought
+
+Balancing everything is not about being perfect every day. It's about showing up, learning when to push, and knowing when to pause.
+
+If you're in the middle of this crazy tech student life, just know: You're doing great. Keep going — one debugged bug and one coffee at a time. ☕
+
+**Tags**: #TechStudent #CodingJourney #ProductivityTips #TimeManagement #InternshipLife #CollegeProjects #StudentLife #WomenInTech #FutureEngineer #DebuggingDiaries #GrowthMindset #AIStudent #LearningToLearn #DeveloperLife
+    `
+  },
   {
     id: "blog-1",
     title: "My Journey into AIML - Why I Chose It and What I've Learned So Far",
