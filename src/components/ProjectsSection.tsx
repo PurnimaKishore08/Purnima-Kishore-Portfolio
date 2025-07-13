@@ -51,6 +51,20 @@ const ProjectsSection = () => {
     liveDemo: "https://purnimakishore08.github.io/Tic-Tac-Toe/",
     sourceCode: "https://github.com/PurnimaKishore08/Tic-Tac-Toe"
   }, {
+    title: "Student Performance Predictor",
+    category: "AI/ML",
+    description: "This project aims to assist educators in identifying students at risk of underperformance by analyzing various features such as study hours, parental education, and test scores.",
+    image: "📚",
+    technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Streamlit"],
+    sourceCode: "https://github.com/PurnimaKishore08/Student-Performance-Predictor"
+  }, {
+    title: "Traffic Sign Recognition",
+    category: "AI/ML",
+    description: "This project uses a Convolutional Neural Network (CNN) to classify images of German traffic signs with real-time prediction capabilities.",
+    image: "🚦",
+    technologies: ["Python", "TensorFlow", "Keras", "OpenCV", "Streamlit"],
+    sourceCode: "https://github.com/PurnimaKishore08/Traffic-Sign-Recognition"
+  }, {
     title: "Obesity Risk Prediction",
     category: "AI/ML",
     description: "Developed an AI/ML model that analyzes lifestyle habits to predict obesity risk factors with 89% accuracy.",
@@ -71,11 +85,12 @@ const ProjectsSection = () => {
     technologies: ["Python", "Computer Vision", "React", "Flask"],
     sourceCode: "https://github.com/PurnimaKishore08/Fashion-Sensei-Virtual-Fashion-Mentor"
   }, {
-    title: "Jarvis Speech System",
+    title: "Jarvis Voice Assistant",
     category: "Speech AI",
     description: "Voice-controlled task executor system that responds to natural language commands for everyday tasks.",
     image: "🎤",
-    technologies: ["Python", "NLP", "Speech Recognition"]
+    technologies: ["Python", "NLP", "Speech Recognition"],
+    sourceCode: "https://github.com/PurnimaKishore08/JARVIS--Voice-Assistant"
   }, {
     title: "Multi-Functional Car",
     category: "Embedded Systems",
@@ -132,13 +147,17 @@ const ProjectsSection = () => {
                 <p className="text-lg mb-6">
                   {activeProject.title === "Tic-Tac-Toe Game" ? 
                     "Developed a web-based version of the classic two-player Tic-Tac-Toe game using core front-end technologies. The application allows two players to take turns placing their symbols (X or O) on a 3x3 grid. The game detects a win or draw condition in real-time and provides an option to restart the game. This project emphasizes clean UI, logical game flow, and JavaScript event handling. Key features include a fully interactive 3×3 game board, two-player functionality, real-time win and draw detection, game status updates and alerts, restart functionality, and responsive design for different screen sizes. The project demonstrates front-end web development skills, event handling, game state management, and building lightweight applications without frameworks - just pure HTML, CSS, and JavaScript."
+                    : activeProject.title === "Student Performance Predictor" ? 
+                    "This project aims to assist educators in identifying students at risk of underperformance by analyzing various features such as study hours, parental education, and test scores. Using Python's scikit-learn library, I trained multiple ML models (Random Forest, SVM) and selected the best-performing one based on accuracy and F1 score. The final model was integrated into a user-friendly interface using Streamlit. Key highlights include achieving over 90% prediction accuracy, interactive web app with data visualization, and clean preprocessing with handling of missing values. The tech stack includes Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, and Streamlit for frontend development."
+                    : activeProject.title === "Traffic Sign Recognition" ? 
+                    "This project uses a Convolutional Neural Network (CNN) to classify images of German traffic signs. I trained the model on the GTSRB dataset using TensorFlow/Keras. The model achieved high accuracy on the test set, and I deployed it using Streamlit so users can upload an image of a sign and get a real-time prediction. Key highlights include training CNN with 95%+ accuracy and real-time sign recognition with image upload functionality. The tech stack includes Python, TensorFlow/Keras, OpenCV for image processing, GTSRB Dataset, and Streamlit for deployment."
                     : activeProject.title === "Obesity Risk Prediction" ? 
                     "The obesity prediction project focuses on utilizing machine learning techniques to classify and predict obesity levels based on individual lifestyle data. The dataset includes 17 features such as age, gender, dietary habits, physical activity, smoking, alcohol consumption, and body measurements. Data preprocessing involved label encoding, BMI calculation, and standardization. Among various models, the Random Forest classifier achieved the highest accuracy of 91%, effectively handling complex, non-linear relationships. In regression analysis, Random Forest again outperformed with a low RMSE of 7.18 and high R² score of 0.93. K-Means clustering revealed five distinct lifestyle patterns. The results demonstrate the effectiveness of ensemble methods in accurately estimating obesity levels from behavioral and physiological indicators, with potential applications in health risk assessment and personalized recommendations." 
                     : activeProject.title === "E-commerce Customer Segmentation" ?
                     "During my summer training at Kurious Learning Labs Pvt Ltd, I worked on this e-commerce customer segmentation project using machine learning techniques. The objective was to segment customers into distinct groups based on their purchasing behavior and engagement patterns to support personalized marketing and customer retention strategies. I used Python and libraries like Pandas, Scikit-learn, and Seaborn to perform data preprocessing, exploratory data analysis, and implemented the KMeans clustering algorithm. Dimensionality reduction techniques such as PCA and t-SNE were applied for better visualization of clusters. The project enabled actionable insights for targeted campaigns, focusing on high-value customers and improving business decision-making. This hands-on experience deepened my skills in data analysis, model building, and visualization, while reinforcing the importance of data-driven strategies in real-world applications."
                     : activeProject.title === "Fashion Sensei" ?
                     "Fashion Sensei is an AI-powered virtual fashion mentor designed to provide personalized outfit recommendations based on individual style preferences and body measurements. Using advanced machine learning techniques, particularly K-means clustering and deep learning models like CNNs, the system analyzes user inputs—such as color, pattern, and clothing type preferences—to generate tailored fashion suggestions. A user-friendly interface collects these preferences and feeds them into the model, which is trained on diverse fashion datasets for both men's and women's clothing. The project achieves an accuracy of 82.5% in delivering relevant outfit suggestions, helping users confidently express their style while promoting inclusivity and sustainability in fashion. Fashion Sensei showcases the potential of combining AI with personal styling to revolutionize the online fashion experience."
-                    : activeProject.title === "Jarvis Speech System" ?
+                    : activeProject.title === "Jarvis Voice Assistant" ?
                     "The Jarvis Speech Recognition System is a voice-activated personal assistant inspired by the fictional AI from Iron Woman. It is designed to interact with users through spoken commands and perform a variety of tasks such as opening applications, searching the web, answering questions, and providing real-time information like weather, time, and news updates. The system is developed using Python and integrates several key technologies including speech recognition for converting spoken words into text, natural language processing (NLP) to understand and interpret user commands, and text-to-speech (TTS) for generating vocal responses. Libraries such as SpeechRecognition, Pyttsx3, and Pyaudio are used to enable these functionalities. Additionally, APIs like OpenAI, WolframAlpha, or Wikipedia enhance the assistant's knowledge and response capabilities. The architecture involves capturing audio input, processing it to extract intent, executing the appropriate action, and delivering a voice-based output. This system finds applications in hands-free desktop operations, smart home automation, and accessibility tools, and serves as a practical introduction to AI-powered voice assistant development."
                     : activeProject.title === "Multi-Functional Car" ?
                     "The Multi-Functional Car project is an Arduino-based robotic vehicle designed to perform multiple automated tasks, including fire detection and extinguishing, wireless video surveillance, and Bluetooth-controlled navigation. Equipped with components such as the LM35 temperature sensor, HC-05 Bluetooth module, L298N motor driver, and a wireless camera, the car is capable of detecting elevated temperatures and responding by activating a fan to suppress potential fires. It also provides real-time video feedback, allowing remote monitoring through a mobile device. The car's movements are controlled via a smartphone using Bluetooth, making it an effective tool for surveillance and safety in environments that may be hazardous or difficult to access. The project demonstrates an integration of hardware and software systems to achieve functionality, mobility, and automation, showcasing the application of embedded systems and IoT in practical, safety-focused solutions."
