@@ -42,6 +42,24 @@ const CertificateSection = () => {
       verificationUrl: "https://drive.google.com/file/d/1CrgL9VJ3E8YoOwbNuGAnGALXzPd4Z-Wd/view?usp=sharing",
       category: "creative",
       icon: <FileText className="h-5 w-5 text-portfolio-accent" />
+    },
+    {
+      id: "big-data-101",
+      title: "IBM Certificate- Big Data 101",
+      issuer: "IBM",
+      date: "2025",
+      verificationUrl: "https://drive.google.com/file/d/1JwUf60ypj3G6DZGHA2nHCqd27RCLI_vT/view?usp=sharing",
+      category: "ai",
+      icon: <GraduationCap className="h-5 w-5 text-portfolio-accent" />
+    },
+    {
+      id: "data-analysis-python",
+      title: "IBM Certificate- Data Analysis with Python",
+      issuer: "IBM",
+      date: "2025",
+      verificationUrl: "https://drive.google.com/file/d/1BljR6mPItsglSiqAwVlnMTzzYrKeoerE/view?usp=sharing",
+      category: "ai",
+      icon: <GraduationCap className="h-5 w-5 text-portfolio-accent" />
     }
   ];
 
