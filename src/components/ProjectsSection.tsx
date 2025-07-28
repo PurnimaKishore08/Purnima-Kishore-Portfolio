@@ -43,6 +43,14 @@ const ProjectCard = ({
 const ProjectsSection = () => {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
   const projects: Project[] = [{
+    title: "Crime Rate Prediction",
+    category: "Data Science/ML",
+    description: "This project aims to analyze and forecast crime rates across various Indian states and union territories using historical crime data from 2020 to 2022. Leveraging the ARIMA (AutoRegressive Integrated Moving Average) model, it predicts future crime patterns, helping stakeholders make informed decisions.",
+    image: "📊",
+    technologies: ["Python", "Pandas", "Statsmodels", "Matplotlib", "Streamlit", "ARIMA"],
+    liveDemo: "https://crime-rate-prediction-rjvoqo4anvzwg8m9g589vw.streamlit.app/",
+    sourceCode: "https://github.com/PurnimaKishore08/crime-rate-prediction"
+  }, {
     title: "Tic-Tac-Toe Game",
     category: "Web Application",
     description: "A web-based version of the classic two-player Tic-Tac-Toe game with real-time win detection and responsive design.",
@@ -152,7 +160,9 @@ const ProjectsSection = () => {
                 </div>
                 
                 <p className="text-lg mb-6">
-                  {activeProject.title === "Tic-Tac-Toe Game" ? 
+                  {activeProject.title === "Crime Rate Prediction" ? 
+                    "This project aims to analyze and forecast crime rates across various Indian states and union territories using historical crime data from 2020 to 2022. Leveraging the ARIMA (AutoRegressive Integrated Moving Average) model, it predicts future crime patterns, helping stakeholders make informed decisions. The dashboard is built using Streamlit, providing users with an intuitive interface to upload custom CSV files, filter data by year or state, and visualize trends through interactive bar and pie charts. This tool is particularly useful for researchers, law enforcement agencies, and policy analysts. The entire solution is coded in Python and integrates key libraries like Pandas, Statsmodels, and Matplotlib. It's a great demonstration of skills in data analysis, machine learning, and frontend deployment."
+                    : activeProject.title === "Tic-Tac-Toe Game" ? 
                     "Developed a web-based version of the classic two-player Tic-Tac-Toe game using core front-end technologies. The application allows two players to take turns placing their symbols (X or O) on a 3x3 grid. The game detects a win or draw condition in real-time and provides an option to restart the game. This project emphasizes clean UI, logical game flow, and JavaScript event handling. Key features include a fully interactive 3×3 game board, two-player functionality, real-time win and draw detection, game status updates and alerts, restart functionality, and responsive design for different screen sizes. The project demonstrates front-end web development skills, event handling, game state management, and building lightweight applications without frameworks - just pure HTML, CSS, and JavaScript."
                     : activeProject.title === "Student Performance Predictor" ? 
                     "This project aims to assist educators in identifying students at risk of underperformance by analyzing various features such as study hours, parental education, and test scores. Using Python's scikit-learn library, I trained multiple ML models (Random Forest, SVM) and selected the best-performing one based on accuracy and F1 score. The final model was integrated into a user-friendly interface using Streamlit. Key highlights include achieving over 90% prediction accuracy, interactive web app with data visualization, and clean preprocessing with handling of missing values. The tech stack includes Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, and Streamlit for frontend development."
