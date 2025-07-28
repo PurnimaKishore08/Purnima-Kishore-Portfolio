@@ -33,7 +33,7 @@ const ResumeSection = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="https://drive.google.com/file/d/1ZYj9d5Q4m-TvX1Nx1dya3FyQv9NAIiw7/view?usp=sharing" 
+                  href="https://drive.google.com/file/d/1KUs5czWD51WmwVKnJjvXOErUxNWBB_Sb/view?usp=sharing" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="button-primary flex items-center justify-center gap-2"
@@ -43,7 +43,7 @@ const ResumeSection = () => {
                 </a>
                 
                 <a 
-                  href="https://drive.google.com/uc?export=download&id=1ZYj9d5Q4m-TvX1Nx1dya3FyQv9NAIiw7" 
+                  href="https://drive.google.com/uc?export=download&id=1KUs5czWD51WmwVKnJjvXOErUxNWBB_Sb" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="button-outline flex items-center justify-center gap-2"
