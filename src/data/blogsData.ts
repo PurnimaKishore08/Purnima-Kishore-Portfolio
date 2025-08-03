@@ -9,6 +9,60 @@ export interface BlogPost {
 
 export const blogsData: BlogPost[] = [
   {
+    id: "data-storytelling-dashboards",
+    title: "When Data Tells a Story: Building Dashboards That Speak",
+    excerpt: "In today's data-saturated world, raw numbers alone don't make an impact — stories do. Discover how I built an interactive crime prediction dashboard using Streamlit.",
+    date: "August 3, 2025",
+    link: "/blog/data-storytelling-dashboards",
+    fullContent: `
+In today's data-saturated world, raw numbers alone don't make an impact — stories do.
+
+When I first started exploring data science, I was fascinated by the idea of finding patterns in datasets. But it wasn't until I began visualizing data through dashboards that I truly saw how data can speak — not just to experts, but to anyone.
+
+That's where my journey with Streamlit began.
+
+## 🔍 The Problem with Numbers Alone
+
+Imagine looking at a spreadsheet with 500 rows of crime statistics across Indian states. Sure, the data is there — but does it mean anything at first glance?
+
+Without visuals, most users (and even developers) struggle to grasp trends, compare values, or spot anomalies. That's why data storytelling is more than just charts — it's about creating an experience.
+
+## 🛠️ My Dashboard Project: Crime Rate Prediction in India
+
+I decided to build an interactive dashboard that could do more than show data — it needed to help users explore, compare, and even predict crime trends.
+
+Using:
+- **Python & Pandas** for data cleaning
+- **ARIMA** for time series prediction
+- **Plotly & Streamlit** for interactive charts
+
+…I built a tool where users can:
+- ✅ Upload CSV data
+- ✅ Filter by year/state
+- ✅ View bar, pie, and line charts
+- ✅ Forecast future crime rates with confidence intervals
+
+Here's the [Live Demo](https://crime-rate-prediction-rjvoqo4anvzwg8m9g589vw.streamlit.app/) if you want to try it out!
+
+## 🎨 Making Dashboards Speak
+
+Here's what I've learned:
+
+- **Design matters** – Light backgrounds, clean fonts, and good spacing make a dashboard easier to trust.
+- **Interactivity beats static** – Dropdown filters, hover tooltips, and dynamic charts engage users.
+- **Less is more** – Show what matters. Don't clutter the screen with every metric.
+- **Prediction ≠ perfection** – Displaying model uncertainty is part of honest storytelling.
+
+## 💡 What This Taught Me
+
+Building this dashboard wasn't just a technical exercise — it taught me how to design with empathy. I wasn't building for data scientists; I was building for decision-makers, students, and curious minds.
+
+**A good dashboard is like a translator — it converts data into decisions.**
+
+If you've ever looked at a dataset and felt lost, try building a dashboard. Let the data speak — you might be surprised by what it says.
+`
+  },
+  {
     id: "blog-8",
     title: "Apple Intelligence in iOS 18: Is This the Future of Personal AI?",
     excerpt: "Apple's major leap into generative AI with on-device processing, privacy-first approach, and smart features that make your devices truly intelligent.",
