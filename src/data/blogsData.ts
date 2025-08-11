@@ -9,6 +9,60 @@ export interface BlogPost {
 
 export const blogsData: BlogPost[] = [
   {
+    id: "ai-cybersecurity-threat-protector",
+    title: "The Role of AI in Cybersecurity: Threat or Protector?",
+    excerpt: "AI is rapidly transforming cybersecurity - but is it protecting us or empowering cybercriminals? Explore both sides of this digital battlefield.",
+    date: "August 11, 2025",
+    link: "/blog/ai-cybersecurity-threat-protector",
+    fullContent: `
+# The Role of AI in Cybersecurity: Threat or Protector?
+
+## Introduction
+
+Artificial Intelligence (AI) has become the new buzzword in almost every industry—but in cybersecurity, it's more than just a trend. AI is rapidly transforming how we detect, prevent, and respond to cyber threats. Yet, the same AI technologies protecting us are also being used by cybercriminals to launch faster, smarter, and harder-to-detect attacks.
+
+So, is AI the shield or the sword in this digital battlefield? Let's explore both sides.
+
+## AI as a Protector 🛡️
+
+### 1. Threat Detection & Prevention
+AI-powered systems can analyze millions of data points in real time, spotting unusual patterns that humans might miss—like sudden spikes in network traffic or suspicious login attempts.
+
+**Example**: Email filters using AI to detect phishing attacks before they hit your inbox.
+
+### 2. Automated Incident Response
+With AI-driven Security Orchestration, Automation, and Response (SOAR) tools, companies can react instantly to threats, reducing damage before hackers even notice they've been caught.
+
+### 3. Predictive Cybersecurity
+By learning from historical attack patterns, AI models can predict likely vulnerabilities and help patch them before an attack happens.
+
+## AI as a Threat ⚔️
+
+### 1. AI-Powered Malware
+Hackers are using AI to create polymorphic malware—malicious code that changes its signature constantly, making it invisible to traditional antivirus tools.
+
+### 2. Deepfake & Social Engineering Attacks
+AI can generate hyper-realistic voices, images, or videos to impersonate people and trick victims into revealing sensitive data.
+
+### 3. Automated Hacking Tools
+Cybercriminals can now use AI scripts to scan networks, find weak spots, and exploit them at a scale no human could achieve manually.
+
+## Finding the Balance ⚖️
+
+The truth is, AI in cybersecurity is like fire—it can cook your food or burn your house down, depending on who's controlling it. The focus should be on:
+
+- Building ethical AI frameworks for security tools.
+- Training AI models with diverse, unbiased data.
+- Strengthening human-AI collaboration, because AI is powerful, but not perfect.
+
+## Conclusion
+
+AI is not inherently good or evil—it's a force multiplier. When in the hands of ethical cybersecurity professionals, it becomes our most effective defense. But if misused, it can lead to more sophisticated, large-scale cyberattacks.
+
+The future of cybersecurity will not be AI versus humans—it will be AI with humans, working together to outsmart evolving threats.
+`
+  },
+  {
     id: "data-storytelling-dashboards",
     title: "When Data Tells a Story: Building Dashboards That Speak",
     excerpt: "In today's data-saturated world, raw numbers alone don't make an impact — stories do. Discover how I built an interactive crime prediction dashboard using Streamlit.",
