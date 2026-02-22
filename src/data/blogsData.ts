@@ -9,6 +9,42 @@ export interface BlogPost {
 
 export const blogsData: BlogPost[] = [
   {
+    id: "ai-summit-2026-insights",
+    title: "AI Summit 2026: Key Insights Shaping the Future of Intelligent Systems",
+    excerpt: "Attending the AI Summit 2026 was an inspiring experience that highlighted how rapidly artificial intelligence is transforming industries, careers, and everyday life.",
+    date: "February 19, 2026",
+    link: "/blog/ai-summit-2026-insights",
+    fullContent: `
+## AI Summit 2026: Key Insights Shaping the Future of Intelligent Systems
+
+Attending the AI Summit 2026 was an inspiring experience that highlighted how rapidly artificial intelligence is transforming industries, careers, and everyday life. The summit brought together researchers, developers, startups, and industry leaders to discuss not only cutting-edge innovations but also the real-world impact of AI systems.
+
+## From Models to Meaningful Impact
+
+One of the strongest themes of the summit was the shift from building powerful models to creating useful, reliable, and scalable AI solutions. Speakers emphasized that success in AI today is not only about accuracy, but also about usability, performance, and integration into existing workflows. This perspective strongly aligns with my own approach to developing AI-driven projects that focus on real user needs.
+
+## Rise of Agentic and Applied AI
+
+A major highlight was the growing adoption of agentic AI, where systems can plan, reason, and act autonomously within defined boundaries. From workflow automation to intelligent decision-support systems, agentic AI is moving beyond theory into production-ready applications. These discussions reinforced the importance of designing AI systems that are both intelligent and controllable.
+
+## Responsible and Ethical AI
+
+The summit also placed strong emphasis on responsible AI development. Topics such as data privacy, bias mitigation, transparency, and explainability were discussed in depth. It became clear that ethical considerations are no longer optional—they are essential for building trust and long-term value in AI products.
+
+## AI Skills for the Future
+
+Another valuable takeaway was the evolving skill set expected from AI engineers. Beyond technical expertise in machine learning and programming, there is increasing demand for skills in system design, communication, and interdisciplinary thinking. This insight motivates me to continuously improve not only my technical skills but also my ability to design complete, production-ready solutions.
+
+## Personal Takeaway
+
+The AI Summit 2026 reinforced my passion for working in applied AI and intelligent systems. It motivated me to focus on building projects that are not only innovative but also ethical, scalable, and impactful. The event served as a reminder that the future of AI belongs to those who can combine strong technical foundations with real-world problem-solving.
+
+## Conclusion
+
+Overall, the AI Summit 2026 was a powerful learning experience that deepened my understanding of where AI is headed and how I can contribute to its future. The insights gained will directly influence my upcoming projects and my long-term goals in AI and machine learning.
+    `
+  },
+  {
     id: "ai-cybersecurity-threat-protector",
     title: "The Role of AI in Cybersecurity: Threat or Protector?",
     excerpt: "AI is rapidly transforming cybersecurity - but is it protecting us or empowering cybercriminals? Explore both sides of this digital battlefield.",
